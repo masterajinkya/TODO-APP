@@ -1,0 +1,39 @@
+/* h1{
+    text-shadow: 2px 2px gray;
+} */
+.lg{
+    width: 100%;
+}
+.create{
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color: blue;
+}
+/* .todoimg{
+    object-fit: cover;
+    height: 25vh;
+    width: 100%;
+} */
+
+.todoimg{
+    background-image: url('https://images.hdqwalls.com/wallpapers/silent-sea-4k-tk.jpg');
+    background-size: cover;
+     /* Adjust the blur intensity as per your requirement */
+    /* For Safari compatibility */
+    height: 25vh; /* Set the desired size for the blurred background */
+    filter: brightness(90%);
+    z-index: -10;
+}
+
+.yourthings{
+    font-size: 40px;
+    line-height: 40px;
+}
+
+@media (max-width: 575.98px) {
+    .yourthings{
+        font-size: 25px;
+        line-height: 25px;
+    }
+ }
