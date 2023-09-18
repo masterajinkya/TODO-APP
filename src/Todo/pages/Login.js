@@ -29,7 +29,7 @@ function Login() {
   }
 
   const handlesignup = () => {
-    navigate("/createaccount")
+    navigate("createaccount")
   }
   return (
     <>
@@ -44,10 +44,10 @@ function Login() {
 
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
-                    <input type="text" className="form-control bg-light" name='username' value={loginData.username} onChange={handleChange} placeholder="User Name" />
+                    <input type="text" className="form-control bg-light" name='username' value={loginData.username} onChange={handleChange} placeholder="User Name" required/>
                   </div>
                   <div className="form-group my-3">
-                    <input type="password" className="form-control bg-light" name='password' value={loginData.password} onChange={handleChange} placeholder="Password" />
+                    <input type="password" className="form-control bg-light" name='password' value={loginData.password} onChange={handleChange} placeholder="Password" required/>
                   </div>
                   <div className="my-4">
                     <button type='submit' className='btn btn-success  lg'>Sign In</button>

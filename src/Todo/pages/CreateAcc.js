@@ -71,15 +71,15 @@ function CreateAcc() {
 
                 <form onSubmit={handleSubmit} >
                   <div className="form-group">
-                    <input type="email" className="form-control bg-light" name='email' value={formData.email} onChange={handleChange} placeholder="Enter Email" />
+                    <input type="email" className="form-control bg-light" name='email' value={formData.email} onChange={handleChange} placeholder="Enter Email" required/>
                     <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone.</small>
                   </div>
                   <div className="form-group mt-3">
-                    <input type="text" className="form-control bg-light" name='username' value={formData.username} onChange={handleChange} placeholder="User Name" />
+                    <input type="text" className="form-control bg-light" name='username' value={formData.username} onChange={handleChange} placeholder="User Name" required/>
                     {error && <small className='text-danger'>username is already taken</small>}
                   </div>
                   <div className="form-group my-3">
-                    <input type="password" className="form-control bg-light" name='password' value={formData.password} onChange={handleChange} placeholder="Password" />
+                    <input type="password" className="form-control bg-light" name='password' value={formData.password} onChange={handleChange} placeholder="Password" required/>
                   </div>
                   <div className="my-4">
                     <button type='submit' className='btn btn-success  lg'>Create Account</button>
