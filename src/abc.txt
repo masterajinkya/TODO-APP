@@ -1,0 +1,25 @@
+{data?.map((todo) => {
+                            return (
+                                <div className={`row mb-3 align-middle border rounded-2 ${todo.role}`}>
+
+
+                                    <div className='col-4 border   '>
+                                        <div className='  p-2'>
+                                            <strong>{todo.name}</strong>
+                                        </div>
+                                    </div>
+                                    <div className='col-6 border'>
+                                        <div className='  p-2'>
+                                            <strong>{todo.info}</strong>
+                                        </div>
+                                    </div>
+                                    <div className='col-2 border '>
+                                        <div className='  p-2 d-flex justify-content-between'>
+                                            {/* <button onClick={() => handleDone(todo.id)} className={`btn p-0 ${todo.status}`} ><CheckCircleOutlineIcon /></button> */}
+                                            <button onClick={() => handleEdit(todo.id)} className='btn p-0 text-primary '><ModeEditIcon /></button>
+                                            <button onClick={() => handleDelete(todo.id)} className='btn p-0 text-danger'><DeleteOutlineIcon /></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}

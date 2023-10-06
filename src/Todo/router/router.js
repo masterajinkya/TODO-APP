@@ -2,17 +2,17 @@ import { Route, createBrowserRouter, createRoutesFromElements } from "react-rout
 import RootLayout from "./RootLayout/RootLayout";
 import Login from "../pages/Login";
 import CreateAcc from "../pages/CreateAcc";
-import TodoApp from "../pages/TodoApp";
 import ProtectedRoute from "./RootLayout/ProtectedRouts";
+import ToduApp2 from "../pages/ToduApp2";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<RootLayout />}>
             <Route index element={<Login />} />
             <Route path="createaccount" element={<CreateAcc />} />
-            <Route path="/todo" element={
+            <Route path="dashbord/admin" element={
                 <ProtectedRoute allowedRoles={"admin"}>
-                    <TodoApp />
+                    <ToduApp2/>
                 </ProtectedRoute>} />
         </Route>
     )

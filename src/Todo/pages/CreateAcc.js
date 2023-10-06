@@ -51,8 +51,6 @@ function CreateAcc() {
     } else {
       alert("Please Enter Different Username")
     }
-
-
   }
   console.log(data);
   const handleLogin = () => {
@@ -62,12 +60,12 @@ function CreateAcc() {
     <>
       <div className='container'>
         <div className='row'>
-          <div className='col-1 col-sm-3'></div>
-          <div className=' text-center border borderd shadow col-10   col-lg-6 py-sm-3 py-lg-5 p-4'>
+          <div className='col-1 col-md-2'></div>
+          <div className=' text-center border borderd shadow col-10   col-md-8 py-sm-3 py-md-5 p-4'>
             <h2 className='mb-4'>Sign Up</h2>
             <div className='row'>
-              <div className='col-sm-1 col-lg-2'></div>
-              <div className=' col-sm-10 col-lg-8'>
+              <div className='col-sm-1 col-md-2'></div>
+              <div className=' col-sm-10 col-md-8'>
 
                 <form onSubmit={handleSubmit} >
                   <div className="form-group">
