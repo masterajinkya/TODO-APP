@@ -203,7 +203,7 @@ function ToduApp2() {
                                 <tbody>
                                     {data.map((todo) => {
                                         return (
-                                            <tr scope="row">
+                                            <tr scope="row" className={todo.role}>
                                                 <td>{todo.name}</td>
                                                 <td >{todo.info}</td>
                                                 <td className='align d-flex  justify-content-between'><button onClick={() => handleEdit(todo.id)} className='btn p-0 text-primary '><ModeEditIcon /></button>
